@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_background"
+    tools:context=".Agendamento">
+
+    <!-- Título da aplicação -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agendando Consulta"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.104" />
+
+    <!-- Subtítulo - Registration -->
+    <TextView
+        android:id="@+id/textViewAppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <!-- EditText Username -->
+    <EditText
+        android:id="@+id/editTextAppFullName"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="48dp"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAppTitle" />
+
+    <!-- EditText Email -->
+    <EditText
+        android:id="@+id/editTextAppAddress"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppFullName" />
+
+    <!-- EditText Password -->
+    <EditText
+        android:id="@+id/editTextAppContactNumber"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:hint="Password"
+        android:inputType="text"
+        android:paddingLeft="28dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppAddress" />
+
+    <!-- EditText Confirm Password -->
+    <EditText
+        android:id="@+id/editTextAppFees"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:hint="Confirm Password"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppContactNumber" />
+
+    <!-- TextView para orientação -->
+    <TextView
+        android:id="@+id/textViewEscolherDataHorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecione data e Horário (horario é de 30 em 30\nminutos, exemplo: 10:00 - 10:30, 12:00 - 12:30)"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppFees"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <!-- Botão para selecionar horário -->
+    <Button
+        android:id="@+id/buttonHorario"
+        style="?android:spinnerStyle"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:text="10:00"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/buttonData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEscolherDataHorario" />
+
+    <!-- Botão para selecionar data -->
+    <Button
+        android:id="@+id/buttonData"
+        style="?android:spinnerStyle"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:text="18/11/2024"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonHorario"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEscolherDataHorario" />
+
+    <!-- Botão de Registro -->
+    <Button
+        android:id="@+id/buttonRegistrar"
+        android:layout_width="323dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/black"
+        android:text="Registrar"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonData" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
