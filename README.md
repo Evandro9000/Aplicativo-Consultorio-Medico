@@ -1,6 +1,12 @@
 # Aplicativo Consultorio Medico
  Este repositório contém o código-fonte de um aplicativo móvel desenvolvido em Java no Android Studio, voltado para simular o atendimento de um consultório médico. 
 
+ ## Sumário
+- [Descrição](#descrição)
+- [Funcionalidades Principais](#funcionalidades-principais)
+- [Configuração do Firebase](#configuração-do-firebase)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+
 ## Descrição  
 Este é um aplicativo móvel desenvolvido em *Java* no *Android Studio, projetado para simular o atendimento em um consultório médico. Ele utiliza o **Firebase* para autenticação, agendamento de consultas e outras funcionalidades. O objetivo é oferecer uma solução prática e funcional para usuários, preservando a segurança dos dados pessoais e sensíveis.  
 
@@ -50,3 +56,9 @@ Exemplo de arquivo google-services.json (substitua pelos seus dados reais):
 }
 ```
 Desenvolvendo seu APP e inciando a conexão com o Firebase via propriedades do Gradle e bibliotecas, esse arquivo será modificado, mas este é somente um exemplo de um arquivo básico que será criado.
+
+## Tecnologias Utilizadas
+- Android Studio
+- Firebase (Auth, Realtime Database, Storage)
+- Java
+- XML para layout
