@@ -47,6 +47,6 @@ Exemplo de arquivo google-services.json (substitua pelos seus dados reais):
       }
     }
   ]
-}```json
-
+}
+```
 Desenvolvendo seu APP e inciando a conexão com o Firebase via propriedades do Gradle e bibliotecas, esse arquivo será modificado, mas este é somente um exemplo de um arquivo básico que será criado.
